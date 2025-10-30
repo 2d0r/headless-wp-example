@@ -39,7 +39,8 @@ export async function GET(request: Request) {
 
   const authToken = login.authToken;
 
-  draftMode().enable();
+  const draftModeStore = await draftMode();
+  draftModeStore.enable();
 
   const query = gql`
     query GetContentNode($id: ID!) {

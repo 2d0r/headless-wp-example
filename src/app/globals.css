@@ -1,8 +1,4 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+@import "tailwindcss";
 
 html,
 body {
@@ -11,11 +7,9 @@ body {
 }
 
 body {
-  color: #fff;
-  background: #000;
+  @apply text-black bg-[#fefefe] flex flex-col;
 }
 
-a {
-  color: #fff;
-  text-decoration: underline;
+blockquote {
+  @apply text-gray-400 p-4 my-4 border-l-3 border-gray-400;
 }
